@@ -11,23 +11,79 @@
 /* Begynd her... */
 .big_grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5%;
+  grid-template-columns: 2fr 3fr;
+  gap: 3%;
 
   section {
     grid-column: 1;
-    font-size: 1cqw;
+    font-size: 1.2cqw;
     color: #677386;
+    margin-top: 15%;
+    margin-left: 2%;
 
     h1 {
       font-weight: bold;
-      font-size: 2cqw;
+      font-size: 6cqw;
       color: #0b0d19;
+    }
+
+    p {
+      margin-top: 5%;
     }
 
     button {
       background-color: #3d7bfa;
       color: #fff;
+      border: 12px solid #3d7bfa;
+      border-radius: 40px;
+      margin-top: 5%;
+      padding: 1% 5% 1% 5%;
+    }
+  }
+
+  .grid {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 5% 7%;
+    margin: 2% 2% 2% 0;
+
+    & img {
+      width: 100%;
+      height: auto;
+      border-radius: 10%;
+      filter: drop-shadow(0 0 0.75rem #677386);
+    }
+
+    :nth-child(1) {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    :nth-child(2) {
+      grid-column: 1;
+      grid-row: 2;
+    }
+    :nth-child(3) {
+      grid-column: 2;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+    :nth-child(4) {
+      grid-column: 3;
+      grid-row: 2;
+    }
+    :nth-child(5) {
+      grid-column: 1;
+      grid-row: 3;
+    }
+    :nth-child(6) {
+      grid-column: 3;
+      grid-row: 3;
+    }
+    :nth-child(7) {
+      grid-column: 2;
+      grid-row: 4;
     }
   }
 }
