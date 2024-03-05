@@ -4,19 +4,23 @@
   .content > * + * {
     margin-top: 0.25rlh;
   }
+}
+.card:not(:has(img, h3)) {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
 
-  :not(:has(img, h3)) {
-    font-size: 1cqw;
-    align-content: center;
-    justify-content: center;
+.card:not(:has(img)) {
+  h3 {
+    font-size: 1.6rem;
   }
+}
 
-  :not(:has(img)) {
-    font-size: 3cqw;
-  }
+.card:has(img, h3) {
+  padding: 0;
 
-  &:has(img, h3) {
-    padding: 0;
+  .content {
+    padding: 1rem;
   }
 }
 
