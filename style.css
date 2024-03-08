@@ -1,2 +1,10 @@
 /* Dine styles her */
-article {}
+article {
+  --flowspace: 0.5rlh;
+}
+h2 {
+  -flowspace: 2rlh;
+}
+h2 {
+  -flowspace: 2rlh;
+}
